@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Run! Forrest</title>
+  <link rel="stylesheet" href="kandi.css" type="text/css" media="screen">
+  <script type="text/javascript" src="jquery.1.10.2.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sound sound-off"></div>
+    <div id="menu">
+      <div id="progress">
+        <div id="percent">Cargando: <span id="p"></span></div>
+        <progress id='progress-bar' value = '0'></progress>
+      </div>
+      <div id="main">
+        <h1>Run! Forrest</h1>
+        <ul>
+          <li><a href="#" class="play">Iniciar juego</a></li>
+          <li><a href="#" class="credits">Créditos</a></li>
+        </ul>
+      </div>
+      <div id="credits">
+        <ul>
+          <li class="artwork">Arte y diseño: Eddy and Adelaidus</li>
+          <li class="artwork">Animación del ciclo de caminar: Eddy and Adelaidus</li>
+          <li class="artwork">mosaicos de las plataformas: Eddy and Adelaidus</li>
+        </ul>
+        <ul>
+          <li class="music">Música del juego: Eddy and Adelaidus</li>
+          <li class="music">Efecto de sonido para el salto: Eddy and Adelaidus</li>
+          <li class="music">Música de Game Over: Eddy and Adelaidus</li>
+        </ul>
+        <ul>
+          <li class="developer">Desarrollador: <a href="http://blog.sklambert.com/">Steven Lambert</a></li>
+        </ul>
+        <div><a href="#" class="back">Volver</a></div>
+      </div>
+    </div>
+    <canvas id="canvas" width="800" height="480"></canvas>
+    <div id="game-over">
+      <h2>Forrest! te dije que corrieras :C <span id="score"></span> metros!</h2>
+      <a href="#" class="restart">Jugar de nuevo?</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="kandi.js"></script>
+</body>
+</html>
